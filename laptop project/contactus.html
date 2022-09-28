@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <script type="text/javascript" src="script\contact.js"> </script>
+</head>
+
+<body>
+    <!-- Table 1 title -->
+    <table class="container" border="0" width="100%" height="10px">
+        <td> <b> <span style="color: #007bff">Peters</span>Gadget</b></td>
+        <td align="right"><a href="https://web.facebook.com">
+                <img width="20px" height="20px" src="images/facebook.png" alt="facebook">
+            </a>
+            <a href="https://twitter.com">
+                <img width="30px" height="20px" src="images/twitter.jfif" alt="twitter">
+            </a>
+            <a href="https://www.instagram.com">
+                <img width="20px" height="20px" src="images/instagram.jfif" alt="instagram">
+            </a>
+        </td>
+    </table>
+    <!-- Table 2 nav bar -->
+    <table class="screen" border="0" width="100%" height="40px">
+        <tr>
+            <td align="center"> <a href="index.html">Home </a> </td>
+            <td align="center"> <a href="laptops.html">Laptops </a> </td>
+            <td align="center"> <a href="aboutus.html">About Us </a> </td>
+            <td align="center"> <a href="contactus.html">Contact Us </a> </td>
+            <td align="center"> <a href="faq.html">FAQs </a> </td>
+        </tr>
+    </table>
+    <!-- Table 2 form -->
+    <table width="100%" border="0">
+        <tr>
+            <td>
+                <h1 style="margin-bottom:30px;">Contact Us</h1>
+                <form method="post" action="">
+                    <label>Full name</label>
+                    <input type="text" name="fname" id="fname" onblur="changeColor(this)" />
+                    <label>Email</label>
+                    <input type="text" name="email" id="email" onblur="changeColor(this)" />
+                    <label>Phone number</label>
+                    <input type="text" name="phoneno" id="phoneno" onblur="changeColor(this)" />
+                    <label>Address</label>
+                    <input type="text" name="address" id="add" onblur="changeColor(this)" />
+                    <label>Subject</label>
+                    <input type="text" name="sub" id="sub" onblur="changeColor(this)" />
+                    <label>Section</label>
+                    <input type="text" name="section" id="section" placeholder="Inquires" onblur="changeColor(this)" />
+                    <label>Message</label>
+                    <textarea name="msg" cols="24" rows="5" id="msg" required onblur="changeColor(this)"></textarea>
+                    <button style="margin-top: 10px; width: 300px;" onclick="show()">Submit</button>
+                </form>
+            </td>
+            <td class="contact" align="center">
+                <div>
+                    <h1>Contact Us</h1>
+                    <p style="margin-top: 15px; margin-bottom: 15px;">Location: Lagos, Nigeria</p>
+                    <p>Phone No: +2349077332501</p>
+                    <p>Email: Petersgadget@gmail.com</p>
+                    <h2>Other Social Media Account </h2>
+
+                    <p><img width="20px" height="20px" src="images/instagram.jfif" alt="instagram"> : peters_gadget</p>
+                    <p><img width="20px" height="20px" src="images/facebook.png" alt="facebook">: peters gadget</p>
+                    <p> <img width="30px" height="20px" src="images/twitter.jfif" alt="twitter">: peters_gadget</p>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <table border="0" width="100%" height="200px">
+        <tr>
+            <td><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d126839.06821658298!2d3.3718272!3d6.5568768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1662459597787!5m2!1sen!2sng"
+                    width="1300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+        </tr>
+    </table>
+    
+      <!-- Table 5 Footer -->
+    <table class="foot" border="0" width="100%" height="30px">
+        <tr>
+            <td align="center">
+                <h2>Copyrights &copy; 2022 </h2>
+            </td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>
