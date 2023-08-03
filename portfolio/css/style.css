@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+main {
+    padding: 30px;
+}
+
+.header {
+    width: 100%;
+}
+
+.brand_wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+}
+
+.brand_logo {
+    width: 4rem;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.menu {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.menu_items {
+    display: inline-flex;
+    background-color: rgb(81, 188, 81);
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    border-radius: 100px;
+}
+
+.menu_items li {
+    list-style: none;
+}
+
+.menu_items a {
+    display: inline-block;
+    padding: 15px;
+    margin: 0 25px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu_items a:hover {
+    background-color: rgba(32, 135, 32, 0.973);
+}
+
+.banner {
+    position: relative;
+    height: 45vh;
+    background-image: linear-gradient(to right bottom, rgba(9, 9, 9, 0.751), rgba(90, 211, 90, 0.505)), url(../images/banner1.jpg);
+    background-size: cover;
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.banner_text {
+    position: absolute;
+    color: #ffffff;
+    width: 100%;
+    padding: 4% 6%;
+}
+
+.banner_text-primary {
+    display: block;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 5px;
+}
+
+.banner_text-secondary {
+    display: block;
+    font-size: 1rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, 30%);
+}
+
+.content {
+    display: flex;
+    max-width: 114rem;
+    gap: 30px;
+    color: white;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5.5rem;
+}
+
+[class^="col-"] {
+    display: flex;
+    width: calc((100% - 2*30px) / 3);
+    background-color: rgba(50, 188, 50, 0.911);
+    border-radius: 10px;
+    padding: 40px;
+    flex-direction: column;
+    margin-bottom: 20px;
+    min-width: 280px;
+    height: 100%;
+}
+
+.content-heading {
+    align-self: center;
+    justify-items: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+[class^="content-image"] {
+    overflow: hidden;
+    background-size: cover;
+    height: 30vh;
+    transition: .6s ease all;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.content-image-1 {
+    background-image: url("../images/garden.jpg");
+}
+
+.content-image-2 {
+    background-image: url("../images/plant.jpg");
+}
+
+.content-image-3 {
+    background-image: url("../images/worker.jpg");
+}
+
+.content-text {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.opening-hours {
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    margin-top: 20px;
+    list-style: none;
+}
+
+.btn-text {
+    background-color: #ffffff;
+    color: #777;
+    border-radius: 100px;
+    font-size: small;
+    padding: 6px 18px;
+}
+
+.btn-text:link,
+.btn-text:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all .2s;
+}
+
+.btn-text:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+
+.btn-text:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    border-top: 1px solid #dbdbdb;
+}
+
+.footer-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    width: 2.2rem;
+    height: auto;
+    object-fit: contain;
+}
+
+.footer-text {
+    font-size: medium;
+    text-align: right;
+}
